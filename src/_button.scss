@@ -1,0 +1,37 @@
+.button,
+a.button,
+input[type="submit"].button {
+  display: inline-block;
+  font-family: $font-family;
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-appearance: button;
+  margin-bottom: $margin-small;
+  font: inherit;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.button--primary,
+a.button--primary,
+input[type="submit"].button--primary {
+  background-color: white;
+  border: 1px solid black;
+  color: $font-color;
+}
+
+.button--secondary,
+a.button--secondary,
+input[type="submit"].button--secondary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  color: white;
+}
