@@ -1,13 +1,9 @@
-@function get-line-height($font-size, $line-height) {
-  @return $line-height / $font-size;
-}
-
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 600;
   line-height: $line-height;
-  margin-bottom: $margin-1;
+  margin-bottom: $margin-small;
 }
 
 h1 { font-size: 6rem; }
@@ -18,6 +14,8 @@ h5 { font-size: 2rem; }
 h6 { font-size: 1.6rem;}
 
 p {
-  font-size: 1.8rem;
+  font-size: $base-font-size;
   font-weight: 400;
+  letter-spacing: 0.2px;
+  max-width: $breakpoint-large;
 }

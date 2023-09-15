@@ -1,7 +1,23 @@
+// Golden Rule
+$golden-rule: 1.618;
+
 // Typography
-$line-height: 1.618;
+$base-font-size: 1.6rem;
+$line-height: $golden-rule;
 $font-color: #383838;
 
 // Spacing
-$margin-1: 1rem;
-$margin-2: 2rem;
+$margin-small: 1rem;
+$margin-medium: 4rem;
+$margin-large: 8rem;
+
+// Grid
+$grid-gutter: 0.8%;
+
+// Breakpoints
+$breakpoint-small: 320px;
+$breakpoint-medium: 480px;
+$breakpoint-large: 760px;
+$breakpoint-xlarge: 1024px;
+$breakpoint-xxlarge: 1200px;
+$grid-breakpoint: $breakpoint-large;

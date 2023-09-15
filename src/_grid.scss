@@ -1,0 +1,36 @@
+@function set-column-width($col) {
+  @return (calc($col / 12)) * 100% - $grid-gutter;
+}
+
+@mixin set-column($col){
+  @media (min-width: $grid-breakpoint) {
+    width: set-column-width($col)
+  }
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column,
+.columns {
+  width: 100%;
+  margin-bottom: 100% - (set-column-width(11) + set-column-width(1));
+  box-sizing: border-box;
+}
+
+.one.column,
+.one.columns { @include set-column(1)}
+.two.columns { @include set-column(2)}
+.three.columns { @include set-column(3)}
+.four.columns { @include set-column(4)}
+.five.columns { @include set-column(5)}
+.six.columns { @include set-column(6)}
+.seven.columns { @include set-column(7)}
+.eight.columns { @include set-column(8)}
+.nine.columns { @include set-column(9)}
+.ten.columns { @include set-column(10)}
+.eleven.columns { @include set-column(11)}
+.twelve.columns { @include set-column(12)}
