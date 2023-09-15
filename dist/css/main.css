@@ -381,13 +381,13 @@ th {
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 1.5em;
-  line-height: 1.5;
-  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.618;
+  font-weight: 400;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #383838;
 }
@@ -396,7 +396,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 600;
-  line-height: 1.42857;
+  line-height: 1.618;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -421,6 +422,11 @@ h5 {
 
 h6 {
   font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .container {
