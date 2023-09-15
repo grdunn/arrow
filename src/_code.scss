@@ -1,9 +1,9 @@
 pre {
   display: block;
-  margin-bottom: $margin-small;
   white-space: pre;
   border: 1px solid $color-highlight-2;
   border-radius: 0.8rem;
+  margin: 0 0 $margin-small * 2 0;
 }
 
 pre > code {

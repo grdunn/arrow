@@ -4,59 +4,82 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
     <title>Arrow</title>
   </head>
   <body>
-    <section class="section">
-      <div class="container">
-          <h1>Header 1</h1>
-          <h2>Header 2</h2>
-          <h3>Header 3</h3>
-          <h4>Header 4</h4>
-          <h5>Header 5</h5>
-          <h6>Header 6</h6>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+    <section class="section header">
+      <div class="container container--large ">
+        <p>+ A lightweight, responsive CSS boilerplate for typography, buttons, and a flexible grid system.</p>
+        <a href="#" class="button button--secondary">Source Code</a>
       </div>
     </section>
     <section class="section">
-      <div class="container">
-        <div class="grid large">
-          <div class="one column">One</div>
-          <div class="eleven columns">Eleven</div>
-          <div class="six columns">Six</div>
-          <div class="six columns">Six</div>
-          <div class="three columns">Three</div>
-          <div class="nine columns">Nine</div>
-          <div class="eight columns">Eight</div>
-          <div class="four columns">Four</div>
-          <div class="five columns">Five</div>
-          <div class="seven columns">Seven</div>
+      <div class="container container--large">
+        <h6>Typography</h6>
+        <p>The base font-family is Roboto via Google Fonts. It's set in REMs, where the <code>html</code> element is set to 62.5%. All measurements are base 10, so <code>1rem</code> is equal to <code>10px</code></p>
+            <pre><code class="code-inverse">&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="container">
-        <a href="#" class="button button--primary">Anchor Primary</a>
-        <button class="button button--primary">Button Primary</button>
-        <input class="button button--primary" type="submit" value="Submit Input">
-        <input class="button button--primary" type="button" value="Button Input">
-      </div>
-      <div class="container">
-        <a href="#" class="button button--secondary">Anchor Secondary</a>
-        <button class="button button--secondary">Button Secondary</button>
-        <input class="button button--secondary" type="submit" value="Submit Input">
-        <input class="button button--secondary" type="button" value="Button Input">
+      <div class="container container--large">
+        <h6>Grid System</h6>
+          <p>A standard 12 column flex grid. The gutter is controlled by a <code>$grid-gutter</code> variable that is set in percentages. It breaks down to full width at the <code>$grid-breakdown</code> variable.</p>
+          <pre><code class="code-inverse">&lt;div class=&quot;grid&quot;&gt;
+  &lt;div class=&quot;one column&quot;&gt;One&lt;/div&gt;
+  &lt;div class=&quot;eleven columns&quot;&gt;Eleven&lt;/div&gt;
+  &lt;div class=&quot;six columns&quot;&gt;Six&lt;/div&gt;
+  &lt;div class=&quot;six columns&quot;&gt;Six&lt;/div&gt;
+  &lt;div class=&quot;three columns&quot;&gt;Three&lt;/div&gt;
+  &lt;div class=&quot;nine columns&quot;&gt;Nine&lt;/div&gt;
+  &lt;div class=&quot;eight columns&quot;&gt;Eight&lt;/div&gt;
+  &lt;div class=&quot;four columns&quot;&gt;Four&lt;/div&gt;
+  &lt;div class=&quot;five columns&quot;&gt;Five&lt;/div&gt;
+  &lt;div class=&quot;seven columns&quot;&gt;Seven&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <div class="grid example">
+            <div class="one column">One</div>
+            <div class="eleven columns">Eleven</div>
+            <div class="six columns">Six</div>
+            <div class="six columns">Six</div>
+            <div class="three columns">Three</div>
+            <div class="nine columns">Nine</div>
+            <div class="eight columns">Eight</div>
+            <div class="four columns">Four</div>
+            <div class="five columns">Five</div>
+            <div class="seven columns">Seven</div>
+          </div>
       </div>
     </section>
     <section class="section">
-      <div class="container">
-        <pre><code>.myclass { 
-  display: block;
-}</code></pre>
-<pre><code class="code-inverse">.myclass { 
-  display: block;
-}</code></pre>
+      <div class="container container--large">
+        <h6>Buttons</h6>
+        <p>Two button variations. One is <code>.button--primary</code> and the other is <code>.button--secondary</code></p>
+        <div>
+          <a href="#" class="button button--primary">Anchor Primary</a>
+          <button class="button button--primary">Button Primary</button>
+          <input class="button button--primary" type="submit" value="Input Primary">
+        </div>
+        <div>
+          <a href="#" class="button button--secondary">Anchor Secondary</a>
+          <button class="button button--secondary">Button Secondary</button>
+          <input class="button button--secondary" type="submit" value="Input Secondary">
+        </div>
       </div>
     </section>
   </body>

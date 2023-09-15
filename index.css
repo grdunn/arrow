@@ -1,0 +1,15 @@
+.example .column,
+.example .columns {
+  padding: 10px;
+  border-radius: 0.8rem;
+  border: 1px solid #b4b4b4;
+}
+
+.header p {
+  margin: 4rem auto;
+}
+
+
+.arrow {
+  margin: 1rem auto;
+}

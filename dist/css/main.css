@@ -395,21 +395,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.618;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
   font-size: 6rem;
+  line-height: 1.15;
 }
 
 h2 {
   font-size: 5rem;
+  line-height: 1.25;
 }
 
 h3 {
   font-size: 3.6rem;
+  line-height: 1.35;
 }
 
 h4 {
@@ -425,16 +428,21 @@ h6 {
 }
 
 p {
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: 400;
-  letter-spacing: 0.2px;
+  line-height: 1.8;
   max-width: 760px;
+  margin: 0 0 2rem 0;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
   width: 90%;
@@ -443,6 +451,14 @@ p {
   .container {
     width: 80%;
   }
+}
+
+.container--large {
+  max-width: 760px;
+}
+
+.container--border {
+  border-bottom: 1px solid #b4b4b4;
 }
 
 .grid {
@@ -572,11 +588,13 @@ a.button--secondary,
 input[type=submit].button--secondary {
   background-color: rgb(76, 198, 75);
   border: 1px solid rgb(76, 198, 75);
+  border-bottom: 2px solid #36a935;
+  border-right: 2px solid #36a935;
   color: white;
 }
 
 .margin-small {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .margin-medium {
@@ -585,10 +603,10 @@ input[type=submit].button--secondary {
 
 pre {
   display: block;
-  margin-bottom: 1rem;
   white-space: pre;
   border: 1px solid #b4b4b4;
   border-radius: 0.8rem;
+  margin: 0 0 2rem 0;
 }
 
 pre > code {
@@ -607,13 +625,6 @@ code {
 .code-inverse {
   background-color: white;
   font-size: 1.2rem;
-}
-
-.column,
-.columns {
-  padding: 10px;
-  border-radius: 0.8rem;
-  border: 1px solid #383838;
 }
 
 /*# sourceMappingURL=main.css.map */

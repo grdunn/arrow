@@ -1,11 +1,18 @@
 .container {
 	position: relative;
   width: 100%;
-	max-width: 960px;
 	margin: 0 auto;
 	box-sizing: border-box;
 	width: 90%;
 	@media (min-width: $breakpoint-large) {
 		width: 80%;
 	}
+}
+
+.container--large {
+	max-width: $breakpoint-large;
+}
+
+.container--border {
+	border-bottom: 1px solid $color-highlight-2
 }
