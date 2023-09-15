@@ -1,0 +1,25 @@
+pre {
+  display: block;
+  margin-bottom: $margin-small;
+  white-space: pre;
+  border: 1px solid $color-highlight-2;
+  border-radius: 0.8rem;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 2rem;
+  white-space: pre;
+}
+
+code {
+  background-color: $color-highlight-1;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+
+.code-inverse {
+  background-color: white;
+  font-size: 1.2rem;
+}
